@@ -6,6 +6,7 @@ const brands = [
   { logo: "/fumisem.PNG", alt: "Fumisem" },
   { logo: "/biofarma.jpg", alt: "Biofarma" },
   { logo: "/danbred.jpg", alt: "DanBred" },
+  {logo: "/vidra.png", alt: "Vidra"}
 ]
 
 const BrandShowcase = () => {
@@ -19,7 +20,7 @@ const BrandShowcase = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {brands.map((brand, index) => (
             <motion.div
               key={index}
