@@ -92,8 +92,12 @@ const Carousel = () => {
               Desde 2015, recorremos rutas nacionales e internacionales cuidando cada detalle. Somos expertos en el traslado de animales (bovinos, porcinos, equinos) y cereales, garantizando seguridad, puntualidad y bienestar en cada kilómetro.
             </p>
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="bg-[#f0fdf4] rounded-lg p-4 text-center shadow hover:shadow-md transition-all">
+                <span className="icon-[fluent-emoji-high-contrast--pig-face] text-4xl text-[#146c2c] mb-2 inline-block" />
+                <h3 className="font-bold text-[#146c2c]">Transporte Porcino</h3>
+                <p className="text-sm text-gray-600 mt-2">Condiciones higiénicas y controladas para porcinos.</p>
+              </div>
               <div className="bg-[#f0fdf4] rounded-lg p-4 text-center shadow hover:shadow-md transition-all">
-              
                 <span className="icon-[ph--cow] text-4xl text-[#146c2c] mb-2 inline-block" />
                 <h3 className="font-bold text-[#146c2c]">Transporte Bovino</h3>
                 <p className="text-sm text-gray-600 mt-2">Especializado para el traslado seguro de ganado bovino.</p>
@@ -103,11 +107,7 @@ const Carousel = () => {
                 <h3 className="font-bold text-[#146c2c]">Transporte Equino</h3>
                 <p className="text-sm text-gray-600 mt-2">Cuidado y confort para caballos durante el viaje.</p>
               </div>
-              <div className="bg-[#f0fdf4] rounded-lg p-4 text-center shadow hover:shadow-md transition-all">
-                <span className="icon-[fluent-emoji-high-contrast--pig-face] text-4xl text-[#146c2c] mb-2 inline-block" />
-                <h3 className="font-bold text-[#146c2c]">Transporte Porcino</h3>
-                <p className="text-sm text-gray-600 mt-2">Condiciones higiénicas y controladas para porcinos.</p>
-              </div>
+              
               <div className="bg-[#f0fdf4] rounded-lg p-4 text-center shadow hover:shadow-md transition-all">
                 <span className="icon-[mdi--corn] text-4xl text-[#146c2c] mb-2 inline-block" />
                 <h3 className="font-bold text-[#146c2c]">Transporte de Cereal</h3>
