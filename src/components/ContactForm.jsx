@@ -1,5 +1,5 @@
 "use client"
-
+import emailjs from "@emailjs/browser";
 import { useState } from "react"
 import { Send } from "lucide-react"
 
@@ -63,29 +63,40 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-
+  
     if (validate()) {
       setIsSubmitting(true)
-
-      // Simulación de envío de formulario
-      setTimeout(() => {
-        setIsSubmitting(false)
-        setSubmitSuccess(true)
-
-        // Reset form after 3 seconds
-        setTimeout(() => {
-          setSubmitSuccess(false)
-          setFormData({
-            name: "",
-            email: "",
-            phone: "",
-            service: "",
-            message: "",
-          })
-        }, 3000)
-      }, 1500)
+  
+      const serviceID = "service_zt4ihdt"
+      const templateID = "template_1e5lsyf"
+      const publicKey = "ABFQhZ0U7BP67SSXB"
+  
+      emailjs
+        .send(serviceID, templateID, formData, publicKey)
+        .then(() => {
+          setIsSubmitting(false)
+          setSubmitSuccess(true)
+  
+          // Resetear el formulario
+          setTimeout(() => {
+            setSubmitSuccess(false)
+            setFormData({
+              name: "",
+              email: "",
+              phone: "",
+              service: "",
+              message: "",
+            })
+          }, 3000)
+        })
+        .catch((err) => {
+          console.error("Error al enviar:", err)
+          setIsSubmitting(false)
+          alert("Hubo un error al enviar el mensaje. Intenta de nuevo.")
+        })
     }
   }
+  
 
   return (
     <section id="contacto" className="py-16 md:py-24 bg-[#b4dcbc]/20">

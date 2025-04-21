@@ -6,7 +6,10 @@ const brands = [
   { logo: "/fumisem.PNG", alt: "Fumisem" },
   { logo: "/biofarma.jpg", alt: "Biofarma" },
   { logo: "/danbred.jpg", alt: "DanBred" },
-  {logo: "/vidra.png", alt: "Vidra"}
+  {logo: "/vidra.png", alt: "Vidra"},
+  {logo: "/re.jpeg", alt: "Re"},
+  {logo: "/sellodeoro.jpeg", alt: "Sello de Oro"},
+  {logo: "/cravero.png", alt: "Cravero"},
 ]
 
 const BrandShowcase = () => {
@@ -20,7 +23,7 @@ const BrandShowcase = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4  gap-8">
           {brands.map((brand, index) => (
             <motion.div
               key={index}
@@ -33,7 +36,7 @@ const BrandShowcase = () => {
               <img
                 src={brand.logo}
                 alt={brand.alt}
-                className="max-h-24 max-w-full object-contain grayscale hover:grayscale-0 transition duration-300"
+                className="max-h-24 max-w-full object-contain grayscale cursor-pointer hover:grayscale-0 transition duration-300"
               />
             </motion.div>
           ))}
