@@ -21,7 +21,7 @@ const Hero = () => {
             transition={{ duration: 1 }}
             className="text-white space-y-10 flex flex-col justify-between  min-h-[60vh]  "
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+            <h1 className=" font-ruwudu text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
               Transporte especializado de animales en pie y carga de cereales
               <span className="block text-[#27d757]">con el máximo cuidado</span>
             </h1>
@@ -29,12 +29,12 @@ const Hero = () => {
            
 
             <div className="flex flex-wrap gap-4">
-            <p className="italic text-[#b4dcbc] text-lg md:text-xl font-medium">
+            <p className="font-breeSerif text-[#b4dcbc] text-lg md:text-xl font-medium">
               “Un largo camino, siempre con el mismo cuidado”
             </p>
               <motion.a
                 href="#contacto"
-                className="bg-[#27d757] hover:bg-[#146c2c] text-white px-6 py-3 rounded-full text-base md:text-lg font-semibold transition-all duration-300"
+                className="bg-[#27d757] font-breeSerif hover:bg-[#146c2c] text-white px-6 py-3 rounded-full text-base md:text-lg font-semibold transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
               >
                 Solicitar Servicio
@@ -42,7 +42,7 @@ const Hero = () => {
 
               <motion.a
                 href="#nosotros"
-                className="border border-[#fff] text-[#fff] hover:bg-[#b4dcbc] hover:text-black px-6 py-3 rounded-full text-base md:text-lg font-semibold transition-all duration-300"
+                className="border border-[#fff] font-breeSerif text-[#fff] hover:bg-[#b4dcbc] hover:text-black px-6 py-3 rounded-full text-base md:text-lg font-semibold transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
               >
                 Conocer Nuestra Historia

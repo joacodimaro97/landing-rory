@@ -8,6 +8,10 @@ module.exports = {
     ],    
     theme: {
       extend: {
+        fontFamily: {
+          ruwudu: ['Ruwudu', 'serif'],
+          breeSerif: ['Bree Serif', 'serif']
+        },
         colors: {
           border: "hsl(var(--border))",
           input: "hsl(var(--input))",
